@@ -1,9 +1,15 @@
 import "./App.css";
+import Navbar from "./components/navbar";
+import { Home } from "./pages";
+import Project from "./pages/project";
 
 function App() {
   return (
     <>
-      <p className="text-sm bg-slate-600">Hello world</p>
+      <Navbar />
+      <div>
+        <Home />
+      </div>
     </>
   );
 }

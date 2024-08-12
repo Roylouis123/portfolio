@@ -1,0 +1,24 @@
+.rotating-text {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block; /* Allows the rotation to work properly */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.5s ease; /* Smooth transition for the rotation */
+}
+
+/* Define the rotation animation */
+.rotating-text:hover {
+    animation: rotate 0.5s forwards; /* Apply the rotation animation on hover */
+}
+
+/* Keyframes for the rotation animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* End at 360 degrees */
+    }
+}
+
+
